@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Fashion Store</title>
+</head>
+<body>
+    <h1>SELECT YOUR CHOICE</h1>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('men')">
+            <img src="./images/fluent-emoji-high-contrast_boy.svg" />
+            Men
+        </button>
+        <button class="tab-button" onclick="showTab('women')">
+            <img src="./images/fluent-emoji-high-contrast_girl.svg" />
+            Women
+        </button>
+        <button class="tab-button" onclick="showTab('kids')">
+            <img src="./images/Vector.svg" />
+            Kids
+        </button>
+    </div>
+    <div class="tab-content" id="men">
+        <div class="products" id="men-products">
+        </div>
+    </div>
+    <div class="tab-content" id="women">
+        <div class="products" id="women-products"></div>
+    </div>
+    <div class="tab-content" id="kids">
+        <div class="products" id="kids-products"></div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

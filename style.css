@@ -1,0 +1,154 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 25%;
+    font-size: 16px;
+    align-items: center;
+}
+
+.tab-button img {
+    width: 14px;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.products {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.product {
+    width: 200px;
+    align-items: center; 
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.product img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.title {
+  font-size: 16px;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+
+}
+
+.vendor {
+    font-size: 14px;
+}
+
+.prev-price {
+    color: #8F8F8F;
+    text-decoration: line-through;
+}
+
+.discount {
+    color: #FF3737;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.add {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 767px) {
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-button {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Design for Tablet Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product {
+        flex: 1 1 calc(40% - 20px);
+    }
+}
